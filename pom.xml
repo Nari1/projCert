@@ -15,14 +15,11 @@
  <packaging>php</packaging>
  <version>1.0-SNAPSHOT</version>
  <build>
-  <plugins>
    <plugin>
     <groupId>org.phpmaven</groupId>
     <artifactId>maven-php-plugin</artifactId>
     <extensions>true</extensions>
-   </plugin>
-
-   <plugin>
+    <plugin>
     <groupId>org.apache.maven.plugins</groupId>
     <artifactId>maven-site-plugin</artifactId>
     <version>3.0</version>
@@ -44,7 +41,6 @@
      </reportPlugins>
     </configuration>
    </plugin>
-  </plugins>
  </build>
  <plugin>
     <groupId>org.codehaus.mojo</groupId>
@@ -61,8 +57,7 @@
         </instrumentation>
     </configuration>
 </plugin>
-
- <dependencies>
+<dependencies>
   <!--  phpUnit for PHP 5 -->
   <dependency>
    <groupId>de.phpunit</groupId>
